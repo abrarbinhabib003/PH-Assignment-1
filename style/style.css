@@ -5,9 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 main{
     /* max-width: 1440px; */
 }
@@ -20,7 +18,7 @@ main{
 }
 /* end linear gradient */
 
-/* common shared style */
+/*  shared style */
 .para-text-primary{
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -29,7 +27,7 @@ main{
   line-height: 26px;
   letter-spacing: 0%;
   }
-/* Hero section */
+
 .banner{
   display: flex;
   flex-direction: column;
@@ -72,5 +70,55 @@ main{
   padding: 21px 24px;
   cursor: pointer;
 }
-/* end of hero section */
+
+.vid-section{
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.vid-section .vid-box h4{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.vid-section .vid-box p{
+  margin: 24px 300px 48px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 32px;text-align: center;
+}
+.vid-content{
+  position: relative;
+  width: 1227px;
+  height: 645px;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.vid-content iframe{
+  top: 17px;
+  left: 17px;
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+}
+/* end video section  */
+
+
+
+
 
