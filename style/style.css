@@ -5,21 +5,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 main{
     /* max-width: 1440px; */
 }
-/* start linear gradient */
-.to-left-grad{
+
+.left{
   background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
-.to-right-grad{
+.right{
   background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
-/* end linear gradient */
-
 /*  shared style */
-.para-text-primary{
+.normal-text{
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
   font-size: 16px;
@@ -71,6 +71,150 @@ main{
   cursor: pointer;
 }
 
+.about{
+  width: 1200px;
+  height: 1393px;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
+  margin: 0 auto;
+}
+.about .about-textbox{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  /* padding: 35px; */
+}
+.about .about-textbox h4{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 32px;
+  font-weight: 800;
+  padding-top: 80px;
+}
+.about .about-textbox p{
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.about .about-card-container{
+  width: 960px;
+  height: 336px;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-card-container .box{
+  padding: 48px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.about-card-container .box .box-content{
+  margin-right: 90px;
+}
+.box h5{
+  color: rgba(13, 19, 33, 0.7);
+  font-family: Azeret Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.box .box-content p{
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.box-btn{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 20px;
+  border: 1px solid rgb(13, 19, 33);
+  opacity: 0.7;
+  cursor: pointer;
+}
+.margin-left{
+  margin-left: 32px;
+}
+
+/* skill starts */
+.skill{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 111px;
+}
+.skill-textbox h4{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.skill-textbox p{
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.skill-container{
+  display: flex;
+  justify-content: space-around;
+}
+.html-color{
+  background: #F9F9E0;
+}
+.css-color{
+  background: #F1E5D1;
+}
+.js-color{
+  background: #F6EEC9;
+}
+.skill-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 364px;
+  height: 299px;
+  border-radius: 16px;
+  padding: 40px;
+
+}
+.skill-card h4{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.skill-card p{
+  margin-bottom: 24px;
+}
+.skill-card img{
+  top: 0;
+  left: 0;
+}
+.skill-card .skill-btn{
+  color: rgb(13, 19, 33);
+  font-family: Azeret Mono;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* skill ends */
+
+
+/* video starts */
 .vid-section{
   margin-top: 90px;
   display: flex;
@@ -116,13 +260,13 @@ main{
   border: none;
   outline: none;
 }
-/* end video section  */
 
-/* support section */
+
+
 .support-section{
   max-width: 1200px;
   height: 313px;
-  /* border: 3px solid green; */
+
   margin: 0 auto;
   padding: 64px 48px;
   border-radius: 16px;
@@ -178,14 +322,14 @@ main{
   outline: none;
   cursor: pointer;
 }
-/* end of support section */
 
 
-/* start footer section */
+
+
 .footer-container{
   max-width: 100wh;
   height: 100px;
-  /* border: 3px solid orange; */
+
   padding: 32px 150px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
